@@ -267,7 +267,7 @@ def plot_names(father,params,depth,ax,u_i,seps):
             lab = str(ide)+": "+father.last_name 
             txt = str(ide)
 #        ax.bar(fr_0, clto, width = fr_1-fr_0, bottom = float(l-1)/float(depth-1), alpha = params['alpha'], color=col, edgecolor=col)
-        ax.bar(fr_0, clto, width = fr_1-fr_0, bottom = float(l-1)/float(de), alpha = params['alpha'], color=col, edgecolor=col)
+        ax.bar((fr_0+fr_1)/2, clto, width = fr_1-fr_0, bottom = float(l-1)/float(de), alpha = params['alpha'], color=col, edgecolor=col)
         ax.bar(0.0, 0.0, width = 0.0, bottom = 0.0, alpha = 1.0, color=col, edgecolor=params['fore_color'],  label=lab)
         if l <= params['abrv_stop_lev'] + 1:
             if not params['col_lab']: col = params['fore_color']
